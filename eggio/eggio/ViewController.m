@@ -59,11 +59,11 @@
     printf("Time: %d Delay: %d \n", self.time, delay);
     
     if (delay != -1) {
-      //sleep(delay);
+      sleep(delay);
       AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
       self.time += delay;
     } else {
-     // sleep(1);
+      sleep(1);
       self.time += 1;
     }
   }
@@ -71,7 +71,6 @@
   // Signal end
   AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
   AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
-
 }
 
 
