@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1y-0I-bME">
+                                <rect key="frame" x="242" y="306" width="117" height="30"/>
+                                <state key="normal" title="Begin Meditation">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="click_begin_meditation:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZZu-pv-VFr"/>
+                                </connections>
+                            </button>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="iX4-c3-CHO">
+                                <rect key="frame" x="253" y="150" width="94" height="29"/>
+                                <connections>
+                                    <action selector="time_between_changed:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Zg2-6H-4nU"/>
+                                </connections>
+                            </stepper>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="ULc-yA-44z">
+                                <rect key="frame" x="253" y="248" width="94" height="29"/>
+                                <connections>
+                                    <action selector="duration_changed:" destination="vXZ-lx-hvc" eventType="valueChanged" id="SSs-dC-hvF"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Time Between:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0H-jC-CaQ">
+                                <rect key="frame" x="130" y="112" width="115" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Duration:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zha-tL-Sgf">
+                                <rect key="frame" x="175" y="207" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I8b-ZW-xbL">
+                                <rect key="frame" x="253" y="203" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tG9-pE-PiQ">
+                                <rect key="frame" x="253" y="108" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iX4-c3-CHO" firstAttribute="top" secondItem="tG9-pE-PiQ" secondAttribute="bottom" constant="8" symbolic="YES" id="5aR-Yk-m5b"/>
+                            <constraint firstItem="ULc-yA-44z" firstAttribute="top" secondItem="I8b-ZW-xbL" secondAttribute="bottom" constant="8" symbolic="YES" id="7B2-im-cqL"/>
+                            <constraint firstAttribute="centerX" secondItem="ULc-yA-44z" secondAttribute="centerX" id="8fa-kd-mhd"/>
+                            <constraint firstItem="I8b-ZW-xbL" firstAttribute="centerY" secondItem="Zha-tL-Sgf" secondAttribute="centerY" id="Br5-US-AgF"/>
+                            <constraint firstItem="I8b-ZW-xbL" firstAttribute="top" secondItem="iX4-c3-CHO" secondAttribute="bottom" constant="8" symbolic="YES" id="MOl-CP-fLP"/>
+                            <constraint firstAttribute="centerX" secondItem="I8b-ZW-xbL" secondAttribute="centerX" id="Q2T-7a-gCj"/>
+                            <constraint firstAttribute="centerX" secondItem="P1y-0I-bME" secondAttribute="centerX" id="ZQv-Ib-YM0"/>
+                            <constraint firstAttribute="centerY" secondItem="P1y-0I-bME" secondAttribute="centerY" id="hsM-Qa-yLI"/>
+                            <constraint firstItem="tG9-pE-PiQ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="i7b-JP-b3b"/>
+                            <constraint firstItem="tG9-pE-PiQ" firstAttribute="centerY" secondItem="S0H-jC-CaQ" secondAttribute="centerY" id="nrp-2P-FGi"/>
+                            <constraint firstAttribute="centerX" secondItem="iX4-c3-CHO" secondAttribute="centerX" id="rNw-6c-r59"/>
+                            <constraint firstItem="P1y-0I-bME" firstAttribute="top" secondItem="ULc-yA-44z" secondAttribute="bottom" constant="8" symbolic="YES" id="sg5-z2-Bd9"/>
+                            <constraint firstAttribute="centerX" secondItem="tG9-pE-PiQ" secondAttribute="centerX" id="utv-2g-TZD"/>
+                            <constraint firstAttribute="centerX" secondItem="P1y-0I-bME" secondAttribute="centerX" id="zqi-Wq-fIH"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ZQv-Ib-YM0"/>
+                                <exclude reference="hsM-Qa-yLI"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="button_begin_meditation" destination="P1y-0I-bME" id="wyp-Nb-PNj"/>
+                        <outlet property="field_duration" destination="I8b-ZW-xbL" id="DHD-qe-8B9"/>
+                        <outlet property="field_time_between" destination="tG9-pE-PiQ" id="5O0-Cw-EUU"/>
+                        <outlet property="label_duration" destination="Zha-tL-Sgf" id="gYU-JA-XXx"/>
+                        <outlet property="label_time_between" destination="S0H-jC-CaQ" id="0y9-rj-C41"/>
+                        <outlet property="stepper_duration" destination="ULc-yA-44z" id="q4h-AH-91A"/>
+                        <outlet property="stepper_time_between" destination="iX4-c3-CHO" id="zuW-c5-TgN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>27F286A2-1753-4726-A191-3A7DB977074B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>eggio</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EA98489FF4E9D6452002C2A2DCF7AA274AE07AB2</key>
+		<string>https://github.com/nathaneidelson/eggio.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>eggio/eggio.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EA98489FF4E9D6452002C2A2DCF7AA274AE07AB2</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/nathaneidelson/eggio.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EA98489FF4E9D6452002C2A2DCF7AA274AE07AB2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EA98489FF4E9D6452002C2A2DCF7AA274AE07AB2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>eggio</string>
+		</dict>
+	</array>
+</dict>
+</plist>
